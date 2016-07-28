@@ -17,6 +17,7 @@ class PetSpec extends Specification {
       pet.dewormed = dewormed
       pet.sterilized = sterilized
       pet.vaccinated = vaccinated
+      pet.breed = new Breed()
     then:"We validate results"
       result == pet.validate()
     where:

@@ -6,6 +6,7 @@ class Pet {
   Boolean dewormed = false
   Boolean sterilized = false
   Boolean vaccinated = false
+  Breed breed
 
   static constraints = {
     name blank:false,nullable:false,size:1..100
