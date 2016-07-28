@@ -18,7 +18,12 @@ class BreedSpec extends Specification {
     where:
     name      | type        || result
     'Teodoro' | PetType.Dog || true
+    'T'       | PetType.Dog || true
+    'T'*100   | PetType.Dog || true
+    'T'*101   | PetType.Dog || false
     null      | PetType.Dog || false
+    ''        | PetType.Dog || false
+    'Teodoro' | null        || false
   }
 
 }

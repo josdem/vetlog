@@ -5,7 +5,7 @@ class Breed {
   PetType type
 
   static constraints = {
-    name blank:false,nullable:false
+    name blank:false,nullable:false,size:1..100
   }
 }
 
