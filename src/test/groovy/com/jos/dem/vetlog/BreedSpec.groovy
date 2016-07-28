@@ -2,21 +2,23 @@ package com.jos.dem.vetlog
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification
+import spock.lang.Unroll
 
-/**
- * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
- */
 @TestFor(Breed)
 class BreedSpec extends Specification {
 
-    def setup() {
-    }
+  void """when we have a breed with name: #name and pet type: #type and we validate we expect result: #result"""() {
+    given:"A breed"
+      Breed breed = new Breed()
+    when:"We assign values"
+      breed.name = name
+      breed.type = type
+    then:"We validate results"
+      result == breed.validate()
+    where:
+    name      | type        || result
+    'Teodoro' | PetType.Dog || true
+    null      | PetType.Dog || false
+  }
 
-    def cleanup() {
-    }
-
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
 }
