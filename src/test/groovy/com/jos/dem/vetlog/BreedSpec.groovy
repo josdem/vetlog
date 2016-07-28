@@ -16,14 +16,14 @@ class BreedSpec extends Specification {
     then:"We validate results"
       result == breed.validate()
     where:
-    name      | type        || result
-    'Teodoro' | PetType.Dog || true
-    'T'       | PetType.Dog || true
-    'T'*100   | PetType.Dog || true
-    'T'*101   | PetType.Dog || false
-    null      | PetType.Dog || false
-    ''        | PetType.Dog || false
-    'Teodoro' | null        || false
+    name        | type        || result
+    'Chihuahua' | PetType.Dog || true
+    'C'         | PetType.Dog || true
+    'C'*100     | PetType.Dog || true
+    'C'*101     | PetType.Dog || false
+    null        | PetType.Dog || false
+    ''          | PetType.Dog || false
+    'Chihuahua' | null        || false
   }
 
 }
