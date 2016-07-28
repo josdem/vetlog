@@ -3,20 +3,12 @@ package com.jos.dem.vetlog
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
-/**
- * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
- */
 @TestFor(Pet)
 class PetSpec extends Specification {
 
-    def setup() {
-    }
+  void "test something"() {
+    expect:"fix me"
+      true == false
+  }
 
-    def cleanup() {
-    }
-
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
 }
