@@ -20,8 +20,18 @@ class PetSpec extends Specification {
     then:"We validate results"
       result == pet.validate()
     where:
-    name      | age | dewormed | sterilized | vaccinated || result
-    'Teodoro' | 2   | true     | true       | true       || true
+    name      | age  | dewormed | sterilized | vaccinated || result
+    'Teodoro' | 2    | true     | true       | true       || true
+    'T'       | 2    | true     | true       | true       || true
+    'T'*100   | 2    | true     | true       | true       || true
+    'Teodoro' | 0    | true     | true       | true       || true
+    'Teodoro' | 300  | true     | true       | true       || true
+    'Teodoro' | -1   | true     | true       | true       || false
+    'Teodoro' | 301  | true     | true       | true       || false
+    'Teodoro' | null | true     | true       | true       || false
+    'T'*101   | 2    | true     | true       | true       || false
+    ''        | 2    | true     | true       | true       || false
+    null      | 2    | true     | true       | true       || false
   }
 
 }
