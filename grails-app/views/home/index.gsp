@@ -8,11 +8,8 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <asset:stylesheet src="application.css"/>
-    <asset:javascript src="application.js"/>
-
     <link href="carousel.css" rel="stylesheet">
-    <title>Modulus UNO</title>
+    <title>Vetlog</title>
     <style>
       .carousel .item {
         background-color: #E0E0E0!important;
