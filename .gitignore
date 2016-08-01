@@ -11,4 +11,4 @@ classes/
 .settings
 .classpath
 **swp
-bower_components/
+grails-app/assets/javascripts/third-party/
