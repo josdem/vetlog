@@ -1,0 +1,27 @@
+{
+  "name": "vetlog",
+  "homepage": "https://github.com/josdem/vetlog",
+  "authors": [
+    "josdem <joseluis.delacruz@gmail.com>"
+  ],
+  "description": "vet pet logging",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "grails/assets/javascripts/third-party/"
+  ],
+  "dependencies": {
+    "vetlog-theme": "https://github.com/josdem/vetlog-theme.git",
+    "slimScroll": "~1.3.7",
+    "hisrc": "*",
+    "EasyAutocomplete": "~1.3.3",
+    "holderjs": "~2.9.1"
+  }
+}
