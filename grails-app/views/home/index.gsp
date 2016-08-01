@@ -8,6 +8,9 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
+    <asset:stylesheet src="application.css"/>
+    <asset:javascript src="application.js"/>
+
     <link href="carousel.css" rel="stylesheet">
     <title>Vetlog</title>
     <style>
@@ -46,7 +49,7 @@
           <div class="container">
             <br />
             <div class="carousel-caption">
-              <asset:image width="40%" src="Logo-ModulusUno-vFINAL-big.png"/>
+              <asset:image width="50%" src="vet_logo.png"/>
             </div>
           </div>
         </div>
