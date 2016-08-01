@@ -49,7 +49,7 @@
           <div class="container">
             <br />
             <div class="carousel-caption">
-              <asset:image width="50%" src="vet_logo.png"/>
+              <asset:image width="50%" src="vet_logo.jpg"/>
             </div>
           </div>
         </div>

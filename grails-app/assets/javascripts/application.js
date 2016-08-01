@@ -1,14 +1,8 @@
-// This is a manifest file that'll be compiled into application.js.
-//
-// Any JavaScript file within this directory can be referenced here using a relative path.
-//
-// You're free to add application-wide JavaScript to this file, but it's generally better
-// to create separate JavaScript files as needed.
-//
-//= require jquery-2.2.0.min
-//= require bootstrap
-//= require_tree .
-//= require_self
+//= require third-party/jquery/dist/jquery.js
+//= require third-party/bootstrap/dist/js/bootstrap.js
+//= require third-party/slimScroll/jquery.slimscroll.js
+//= require third-party/hisrc/hisrc.js
+//= require third-party/vetlog-theme/js/flex.js
 
 if (typeof jQuery !== 'undefined') {
     (function($) {

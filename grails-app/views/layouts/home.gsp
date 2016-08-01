@@ -12,7 +12,7 @@
         padding-bottom: 20px;
       }
       div.bg {
-        background-image: url("http://s3-us-west-1.amazonaws.com/josdem-bucket/bg.jpg");
+        background-image: url("${assetPath(src: 'bg.jpg')}");
         background-size: 100% auto;
       }
       .shadow {
