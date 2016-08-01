@@ -31,11 +31,11 @@
           </button>
           <ul class="nav navbar-nav">
             <sec:ifNotLoggedIn>
-              <li class="active"><g:link controller="user" action="create">Regístrate Aquí</g:link></li>
-              <li><g:link controller="dashboard" >Ingresa a tu Cuenta</g:link></li>
+              <li class="active"><g:link controller="user" action="create">Register Here</g:link></li>
+              <li><g:link controller="dashboard" >Login</g:link></li>
             </sec:ifNotLoggedIn>
             <sec:ifLoggedIn>
-              <li><g:link controller="dashboard">Entra al dashboard</g:link></li>
+              <li><g:link controller="dashboard">Dashboard</g:link></li>
             </sec:ifLoggedIn>
           </ul>
         </div>
@@ -59,62 +59,28 @@
     <div class="container marketing">
       <div class="row">
         <div class="col-lg-4">
-          <asset:image width="25%" class="img-circle" src="Logosimbolo-ModulusUno-vFINAL-big.png"/>
-          <h2>REGISTRA</h2>
-          <p>Registra a todos tus clientes, proveedores, emeplados, colaboradores, productos o inventarios.
-          Lleva fácilmente su control.</p>
+          <asset:image width="25%" class="img-circle" src="vet_logo.jpg"/>
+          <h2>REGISTER</h2>
+          <p>Reister all your pets, so you can check its healty care historial.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <asset:image width="25%" class="img-circle" src="Logosimbolo-ModulusUno-vFINAL-big.png"/>
-          <h2>OPERA</h2>
-          <p>Realiza depósitos, retiros o pagos. Recibe cobranza, actualiza inventarios.
-          Todo de una manera muy sencilla.</p>
+          <asset:image width="25%" class="img-circle" src="vet_logo.jpg"/>
+          <h2>CONSULT</h2>
+          <p>Consult your pet historial, so you can keep up to date with its care.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <asset:image width="25%" class="img-circle" src="Logosimbolo-ModulusUno-vFINAL-big.png"/>
-          <h2>CONSULTA</h2>
-          <p>Cuanto debo? Cuanto me deben? Que hay que pagar esta semana?
-          Tan fácil como consultarlo.</p>
+          <asset:image width="25%" class="img-circle" src="vet_logo.jpg"/>
+          <h2>ADOPTION</h2>
+          <p>Adopting a pet is a big step, find the right pet since it would be a member of your family.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <asset:image  class="featurette-image img-responsive center-block" src="Logosimbolo-ModulusUno-vFINAL-big.png"/>
-        </div>
-      </div>
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <asset:image  class="featurette-image img-responsive center-block" src="Logosimbolo-ModulusUno-vFINAL-big.png"/>
-        </div>
-      </div>
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <asset:image  class="featurette-image img-responsive center-block" src="Logosimbolo-ModulusUno-vFINAL-big.png"/>
-        </div>
-      </div>
-      <hr class="featurette-divider">
-      <footer>
+            <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 josdem.io &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     </div>
   </body>
