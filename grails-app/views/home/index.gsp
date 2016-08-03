@@ -13,22 +13,10 @@
 
     <link href="carousel.css" rel="stylesheet">
     <title>Vetlog</title>
-    <style>
-      .carousel .item {
-        background-color: #E0E0E0!important;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <ul class="nav navbar-nav">
             <sec:ifNotLoggedIn>
               <li class="active"><g:link controller="user" action="create">Register Here</g:link></li>
@@ -38,23 +26,10 @@
               <li><g:link controller="dashboard">Dashboard</g:link></li>
             </sec:ifLoggedIn>
           </ul>
-        </div>
       </div>
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="container">
-            <br />
-            <div class="carousel-caption">
-              <asset:image width="50%" src="vet_logo.jpg"/>
-            </div>
-          </div>
-        </div>
-    </div>
-      <br />
+    <br/><br/><br/>
 
     <div class="container marketing">
       <div class="row">
