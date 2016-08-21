@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Admin - Responsive Admin Theme</title>
 
+    <asset:javascript src="third-party/application.js" />
+    <asset:stylesheet src="application.css" />
+
     <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
     <asset:stylesheet src="third-party/vetlog-theme/css/plugins/pace/pace.css" />
     <asset:javascript src="third-party/vetlog-theme/js/plugins/pace/pace.js" />
@@ -15,22 +18,22 @@
     <asset:stylesheet src="third-party/vetlog-theme/css/plugins/bootstrap/bootstrap.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel="stylesheet" type="text/css">
-    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <asset:stylesheet src="third-party/font-awesome/css/font-awesome.min.css"/>
 
     <!-- PAGE LEVEL PLUGIN STYLES -->
-    <link href="third-party/vetlog-theme/css/plugins/messenger/messenger.css" />
-    <link href="third-party/vetlog-theme/css/plugins/messenger/messenger-theme-flat.css" />
-    <link href="third-party/vetlog-theme/css/plugins/daterangepicker/daterangepicker-bs3.css" />
-    <link href="third-party/vetlog-theme/css/plugins/morris/morris.css" />
-    <link href="third-party/vetlog-theme/css/plugins/jvectormap/jquery-jvectormap-1.2.2.css" />
-    <link href="third-party/vetlog-theme/css/plugins/datatables/datatables.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/messenger/messenger.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/messenger/messenger-theme-flat.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/daterangepicker/daterangepicker-bs3.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/morris/morris.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/jvectormap/jquery-jvectormap-1.2.2.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/datatables/datatables.css" />
 
     <!-- THEME STYLES - Include these on every page. -->
-    <link href="third-party/vetlog-theme/css/plugins/style.css" />
-    <link href="third-party/vetlog-theme/css/plugins/plugins.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/style.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/plugins.css" />
 
     <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
-    <link href="third-party/vetlog-theme/css/plugins/demo.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/demo.css" />
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -53,7 +56,7 @@
                 </button>
                 <div class="navbar-brand">
                     <a href="index.html">
-                        <img src="third-party/vetlog-theme/img/flex-admin-logo.png" data-1x="third-party/vetlog-theme/img/flex-admin-logo@1x.png" data-2x="third-party/vetlog-theme/img/flex-admin-logo@2x.png" class="hisrc img-responsive" alt="">
+                        <asset:image src="third-party/vetlog-theme/img/flex-admin-logo.png" data-1x="third-party/vetlog-theme/img/flex-admin-logo@1x.png" data-2x="third-party/vetlog-theme/img/flex-admin-logo@2x.png" class="hisrc img-responsive" alt="" />
                     </a>
                 </div>
             </div>
@@ -95,8 +98,8 @@
                                         <a href="#">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <img class="img-circle" src="third-party/vetlog-theme/img/user-profile-1.jpg" alt="">
-                                                </div>
+                                                    <asset:image class="img-circle" src="third-party/vetlog-theme/img/user-profile-1.jpg" alt="" />
+                                                </div> /
                                                 <div class="col-xs-10">
                                                     <p>
                                                         <strong>Jane Smith</strong>: Hi again! I wanted to let you know that the order...
@@ -112,7 +115,7 @@
                                         <a href="#">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <img class="img-circle" src="third-party/vetlog-theme/img/user-profile-2.jpg" alt="">
+                                                    <asset:image class="img-circle" src="third-party/vetlog-theme/img/user-profile-2.jpg" alt="" />
                                                 </div>
                                                 <div class="col-xs-10">
                                                     <p>
@@ -129,7 +132,7 @@
                                         <a href="#">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <img class="img-circle" src="third-party/vetlog-theme/img/user-profile-3.jpg" alt="">
+                                                    <asset:image class="img-circle" src="/third-party/vetlog-theme/img/user-profile-3.jpg" alt="" />
                                                 </div>
                                                 <div class="col-xs-10">
                                                     <p>
@@ -146,7 +149,7 @@
                                         <a href="#">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <img class="img-circle" src="third-party/vetlog-theme/img/user-profile-4.jpg" alt="">
+                                                    <asset:image class="img-circle" src="third-party/vetlog-theme/img/user-profile-4.jpg" alt="" />
                                                 </div>
                                                 <div class="col-xs-10">
                                                     <p>
@@ -532,7 +535,7 @@
                 <ul id="side" class="nav navbar-nav side-nav">
                     <!-- begin SIDE NAV USER PANEL -->
                     <li class="side-user hidden-xs">
-                        <img class="img-circle" src="img/profile-pic.jpg" alt="">
+                        <asset:image class="img-circle" src="third-party/vetlog-theme/img/profile-pic.jpg" alt=""/>
                         <p class="welcome">
                             <i class="fa fa-key"></i> Logged in as
                         </p>
@@ -1243,7 +1246,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="media">
                                                         <a class="pull-left" href="#">
-                                                            <img class="media-object img-circle" src="img/user-profile-1.jpg" alt="">
+                                                            <asset:image class="media-object img-circle" src="third-party/vetlog-theme/img/user-profile-1.jpg" alt="" />
                                                         </a>
                                                         <div class="media-body">
                                                             <h4 class="media-heading">Jane Smith
@@ -1259,7 +1262,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="media">
                                                         <a class="pull-left" href="#">
-                                                            <img class="media-object img-circle" src="img/profile-pic-small.jpg" alt="">
+                                                            <asset:image class="media-object img-circle" src="third-party/vetlog-theme/img/profile-pic-small.jpg" alt="" />
                                                         </a>
                                                         <div class="media-body">
                                                             <h4 class="media-heading">John Smith
@@ -1276,7 +1279,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="media">
                                                         <a class="pull-left" href="#">
-                                                            <img class="media-object img-circle" src="img/user-profile-1.jpg" alt="">
+                                                            <asset:image class="media-object img-circle" src="third-party/vetlog-theme/img/user-profile-1.jpg" alt="" />
                                                         </a>
                                                         <div class="media-body">
                                                             <h4 class="media-heading">Jane Smith
@@ -1401,15 +1404,15 @@
     <!-- /#wrapper -->
 
     <!-- GLOBAL SCRIPTS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="js/plugins/popupoverlay/jquery.popupoverlay.js"></script>
-    <script src="js/plugins/popupoverlay/defaults.js"></script>
+    <asset:javascript src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/bootstrap/bootstrap.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/slimscroll/jquery.slimscroll.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/jquery.popupoverlay.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/defaults.js" />
     <!-- Logout Notification Box -->
     <div id="logout">
         <div class="logout-message">
-            <img class="img-circle img-logout" src="img/profile-pic.jpg" alt="">
+            <asset:image class="img-circle img-logout" src="third-party/vetlog-theme/img/profile-pic.jpg" alt="" />
             <h3>
                 <i class="fa fa-sign-out text-green"></i> Ready to go?
             </h3>
@@ -1428,38 +1431,38 @@
     </div>
     <!-- /#logout -->
     <!-- Logout Notification jQuery -->
-    <script src="third-party/vetlog-theme/js/plugins/popupoverlay/logout.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/logout.js" />
     <!-- HISRC Retina Images -->
-    <script src="third-party/vetlog-theme/js/plugins/hisrc/hisrc.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/hisrc/hisrc.js" />
 
     <!-- PAGE LEVEL PLUGIN SCRIPTS -->
     <!-- HubSpot Messenger -->
-    <script src="third-party/vetlog-theme/js/plugins/messenger/messenger.min.js"></script>
-    <script src="third-party/vetlog-theme/js/plugins/messenger/messenger-theme-flat.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/messenger/messenger.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/messenger/messenger-theme-flat.js" />
     <!-- Date Range Picker -->
-    <script src="third-party/vetlog-theme/js/plugins/daterangepicker/moment.js"></script>
-    <script src="third-party/vetlog-theme/js/plugins/daterangepicker/daterangepicker.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/daterangepicker/moment.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/daterangepicker/daterangepicker.js" />
     <!-- Morris Charts -->
-    <script src="third-party/vetlog-theme/js/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="third-party/vetlog-theme/js/plugins/morris/morris.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/morris/raphael-2.1.0.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/morris/morris.js" />
     <!-- Flot Charts -->
-    <script src="third-party/vetlog-theme/js/plugins/flot/jquery.flot.js"></script>
-    <script src="third-party/vetlog-theme/js/plugins/flot/jquery.flot.resize.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/flot/jquery.flot.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/flot/jquery.flot.resize.js" />
     <!-- Sparkline Charts -->
-    <script src="third-party/vetlog-theme/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/sparkline/jquery.sparkline.min.js" />
     <!-- Moment.js -->
-    <script src="third-party/vetlog-theme/js/plugins/moment/moment.min.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/moment/moment.min.js" />
     <!-- jQuery Vector Map -->
-    <script src="third-party/vetlog-theme/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="third-party/vetlog-theme/js/plugins/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/jvectormap/maps/jquery-jvectormap-world-mill-en.js" />
     <!-- Easy Pie Chart -->
-    <script src="third-party/vetlog-theme/js/plugins/easypiechart/jquery.easypiechart.min.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/easypiechart/jquery.easypiechart.min.js" />
     <!-- DataTables -->
-    <script src="third-party/vetlog-theme/js/plugins/datatables/jquery.dataTables.js"></script>
-    <script src="third-party/vetlog-theme/js/plugins/datatables/datatables-bs3.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/datatables/jquery.dataTables.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/datatables/datatables-bs3.js" />
 
     <!-- THEME SCRIPTS -->
-    <script src="third-party/vetlog-theme/js/plugins/flex.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/flex.js" />
 
 </body>
 
