@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Admin - Responsive Admin Theme</title>
 
-    <asset:javascript src="third-party/application.js" />
+    <asset:javascript src="application.js" />
     <asset:stylesheet src="application.css" />
+    <asset:javascript src="third-party/jquery/dist/jquery.js" />
 
     <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
     <asset:stylesheet src="third-party/vetlog-theme/css/plugins/pace/pace.css" />
@@ -29,8 +30,8 @@
     <asset:stylesheet src="third-party/vetlog-theme/css/plugins/datatables/datatables.css" />
 
     <!-- THEME STYLES - Include these on every page. -->
-    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/style.css" />
-    <asset:stylesheet src="third-party/vetlog-theme/css/plugins/plugins.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/style.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins.css" />
 
     <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
     <asset:stylesheet src="third-party/vetlog-theme/css/plugins/demo.css" />
@@ -1463,7 +1464,8 @@
 
     <!-- THEME SCRIPTS -->
     <asset:javascript src="third-party/vetlog-theme/js/plugins/flex.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/demo/dashboard-demo.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/demo/map-demo-data.js" />
 
 </body>
-
 </html>
