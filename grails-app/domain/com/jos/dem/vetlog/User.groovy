@@ -18,6 +18,8 @@ class User implements Serializable {
 	boolean accountLocked
 	boolean passwordExpired
 
+  Profile profile
+
 	Set<Role> getAuthorities() {
 		UserRole.findAllByUser(this)*.role
 	}
