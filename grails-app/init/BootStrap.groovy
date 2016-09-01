@@ -1,3 +1,10 @@
+import grails.util.Environment
+
+import com.jos.dem.vetlog.User
+import com.jos.dem.vetlog.Profile
+import com.jos.dem.vetlog.Role
+import com.jos.dem.vetlog.UserRole
+
 class BootStrap {
 
   def init = { servletContext ->
@@ -8,17 +15,16 @@ class BootStrap {
 
   def createUserWithRole(String username, String password, String email, String authority) {
     if(Environment.current != Environment.PRODUCTION){
-      def userRole = Role.findByAuthority(authority)
+      def userRole = new Role(authority:authority).save()
       def user = User.findByUsername(username) ?: new User(username:username,
         password:password,
         enabled:true,
         profile:new Profile(name:username, lastName:'lastName', email:email)).save()
-      if(!UserRole.get(user.id,userRole.id)){
-        UserRole.create user, userRole, true
-      }
+      new UserRole(user:user, userRole:userRole).save()
     }
   }
 
   def destroy = {
   }
+
 }
