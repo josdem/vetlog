@@ -32,8 +32,6 @@
     <!-- THEME STYLES - Include these on every page. -->
     <asset:stylesheet src="third-party/vetlog-theme/css/style.css" />
     <asset:stylesheet src="third-party/vetlog-theme/css/plugins.css" />
-
-    <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
     <asset:stylesheet src="third-party/vetlog-theme/css/demo.css" />
 
     <!--[if lt IE 9]>
