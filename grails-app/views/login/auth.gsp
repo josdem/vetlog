@@ -19,7 +19,7 @@
           <div class="portlet portlet-green">
             <div class="portlet-heading login-heading">
               <div class="portlet-title">
-                <h4>Welcome</h4>
+                <h4>${message(code:'login.welcome')}</h4>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -29,18 +29,18 @@
               </g:if>
               <form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
                 <fieldset>
-                  <label for="j_username">Username</label>
+                  <label for="j_username">${message(code:'login.username')}</label>
                   <input type="text" name='j_username' class="form-control" placeholder="Nombre de usuario" id='username' value="${flash.username ?: session.username}" >
-                  <label for="j_password">Password</label>
+                  <label for="j_password">${message(code:'login.password')}</label>
                   <input type="password" name='j_password' class="form-control" placeholder="Contraseña" id='password' >
                   <br/>
-                  <button id="btn-success" type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
+                  <button id="btn-success" type="submit" class="btn btn-lg btn-primary btn-block">${message(code:'login.action')}</button>
                   <hr>
-                  <g:link controller="user" action="create" class="btn btn-block btn-default">Register Here</g:link>
+                  <g:link controller="user" action="create" class="btn btn-block btn-default">${message(code:'login.register')}</g:link>
                 </fieldset>
                 <br>
                 <p class="small">
-                <g:link controller="recovery" action="forgotPassword">Forgot your password? Click Here</g:link>
+                <g:link controller="recovery" action="forgotPassword">${message(code:'login.forgot')}</g:link>
                 </p>
               </form>
             </div>
