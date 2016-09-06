@@ -8,19 +8,18 @@ import com.jos.dem.vetlog.UserRole
 class BootStrap {
 
   def init = { servletContext ->
-    if (!User.count()) {
-      createUserWithRole('josdem', '12345678', 'joseluis.delacruz@gmail.com', 'ROLE_USER')
-    }
+    createUserWithRole('josdem', '12345678', 'joseluis.delacruz@gmail.com', 'ROLE_USER')
   }
 
   def createUserWithRole(String username, String password, String email, String authority) {
     if(Environment.current != Environment.PRODUCTION){
-      def userRole = new Role(authority:authority).save()
-      def user = User.findByUsername(username) ?: new User(username:username,
+      def role = new Role(authority:authority).save()
+      def user = new User(username:username,
         password:password,
         enabled:true,
         profile:new Profile(name:username, lastName:'lastName', email:email)).save()
-      new UserRole(user:user, userRole:userRole).save()
+      new UserRole(user:user, role:role).save()
+      assert user.id
     }
   }
 

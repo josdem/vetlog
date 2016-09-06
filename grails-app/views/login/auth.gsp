@@ -27,6 +27,7 @@
               <g:if test="${flash.message || session.message}">
               <p class="text-info">${flash.message ?: session.message}</p>
               </g:if>
+              ${postUrl}
               <form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
                 <fieldset>
                   <label for="j_username">${message(code:'login.username')}</label>

@@ -16,7 +16,7 @@
       <div class="container">
         <h1>Welcome!</h1>
         <p>Maintain your pet history organized</p>
-        <p><a class="btn btn-primary btn-lg" href="contact" role="button">Register Here</a></p>
+        <p><a class="btn btn-primary btn-lg" href="login" role="button">Login Here</a></p>
       </div>
     </div>
     <div class="container">

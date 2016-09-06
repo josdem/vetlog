@@ -4,6 +4,7 @@
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.jos.dem.vetlog.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.jos.dem.vetlog.UserRole'
 grails.plugin.springsecurity.authority.className = 'com.jos.dem.vetlog.Role'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/dashboard'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
@@ -12,10 +13,14 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/index.gsp',      access: ['permitAll']],
 	[pattern: '/shutdown',       access: ['permitAll']],
 	[pattern: '/assets/**',      access: ['permitAll']],
+	[pattern: '/dbconsole/**',   access: ['permitAll']],
+	[pattern: '/login',          access: ['permitAll']],
+	[pattern: '/login/**',       access: ['permitAll']],
 	[pattern: '/**/js/**',       access: ['permitAll']],
 	[pattern: '/**/css/**',      access: ['permitAll']],
 	[pattern: '/**/images/**',   access: ['permitAll']],
-	[pattern: '/**/favicon.ico', access: ['permitAll']]
+	[pattern: '/**/favicon.ico', access: ['permitAll']],
+	[pattern: '/dashboard/**',   access: ['IS_AUTHENTICATED_FULLY']]
 ]
 
 grails.plugin.springsecurity.filterChain.chainMap = [
