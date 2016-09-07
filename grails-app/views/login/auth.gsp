@@ -27,13 +27,12 @@
               <g:if test="${flash.message || session.message}">
               <p class="text-info">${flash.message ?: session.message}</p>
               </g:if>
-              ${postUrl}
               <form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
                 <fieldset>
-                  <label for="j_username">${message(code:'login.username')}</label>
-                  <input type="text" name='j_username' class="form-control" placeholder="Nombre de usuario" id='username' value="${flash.username ?: session.username}" >
-                  <label for="j_password">${message(code:'login.password')}</label>
-                  <input type="password" name='j_password' class="form-control" placeholder="Contraseña" id='password' >
+                  <label for="username">${message(code:'login.username')}</label>
+                  <input type="text" name='username' class="form-control" placeholder="Nombre de usuario" id='username' value="${flash.username ?: session.username}" >
+                  <label for="password">${message(code:'login.password')}</label>
+                  <input type="password" name='password' class="form-control" placeholder="Contraseña" id='password' >
                   <br/>
                   <button id="btn-success" type="submit" class="btn btn-lg btn-primary btn-block">${message(code:'login.action')}</button>
                   <hr>
