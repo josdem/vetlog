@@ -30,9 +30,9 @@
               <form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
                 <fieldset>
                   <label for="username">${message(code:'login.username')}</label>
-                  <input type="text" name='username' class="form-control" placeholder="Nombre de usuario" id='username' value="${flash.username ?: session.username}" >
+                  <input type="text" name='username' class="form-control" placeholder="${message(code:'login.username')}" id='username' value="${flash.username ?: session.username}" >
                   <label for="password">${message(code:'login.password')}</label>
-                  <input type="password" name='password' class="form-control" placeholder="Contraseña" id='password' >
+                  <input type="password" name='password' class="form-control" placeholder="${message(code:'login.password')}" id='password' >
                   <br/>
                   <button id="btn-success" type="submit" class="btn btn-lg btn-primary btn-block">${message(code:'login.action')}</button>
                   <hr>
