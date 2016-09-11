@@ -22,5 +22,12 @@ class UserSpec extends Specification {
     where:"We have following cases"
     email               | username | password   | name   | lastName     || result
     'josdem@email.com'  | 'josdem' | 'password' | 'jose' | 'De la Cruz' || true
+    'josdem@email.com'  | 'josdem' | 'password' | 'j'    | 'De la Cruz' || true
+    'josdem@email.com'  | 'josdem' | 'password' | 'jose' | 'D'          || true
+    'josdememail.com'   | 'josdem' | 'password' | 'jose' | 'De la Cruz' || false
+    'josdem'            | 'josdem' | 'password' | 'jose' | 'De la Cruz' || false
+    'josdem@emailcom'   | 'josdem' | 'password' | 'jose' | 'De la Cruz' || false
+    'josdem@email.com'  | '12345'  | 'password' | 'jose' | 'De la Cruz' || false
+    'josdem@email.com'  | 'josdem' | '1234567'  | 'jose' | 'De la Cruz' || false
   }
 }
