@@ -12,6 +12,7 @@ class UserCommand implements Validateable {
   static constraints = {
     name blank:false,size:1..100
     lastName blank:false,size:1..100
+    password blank:false,size:8..50
 
     username(blank:false,size:6..50,validator:{val, obj ->
       if(User.findByUsername(val)){
