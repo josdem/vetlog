@@ -1,4 +1,4 @@
-package com.jos.dem
+package com.jos.dem.vetlog
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification
