@@ -26,4 +26,12 @@ class UserCommand implements Validateable {
     })
   }
 
+  Profile getProfile(){
+    new Profile(
+      name:this.name,
+      lastName:this.lastName,
+      email:this.email
+    )
+  }
+
 }
