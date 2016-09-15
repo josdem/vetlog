@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="layout" content="home">
+    <meta name="layout" content="main">
     <asset:stylesheet src="third-party/vetlog-theme/css/style.css" />
     <asset:stylesheet src="third-party/vetlog-theme/css/plugins.css" />
     <asset:stylesheet src="third-party/vetlog-theme/css/demo.css" />
