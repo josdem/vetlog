@@ -18,7 +18,7 @@ class UserController {
   }
 
   def create() {
-    respond new User(params)
+    render view:"create", model:[user:new UserCommand()]
   }
 
   @Transactional
