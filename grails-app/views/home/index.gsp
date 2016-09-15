@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="layout" content="main" />
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
