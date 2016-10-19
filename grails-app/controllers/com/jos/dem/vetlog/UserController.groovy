@@ -27,6 +27,7 @@ class UserController {
   def save(UserCommand command) {
     if (command.hasErrors()) {
       render(view:'create', model:[user:command])
+      return
     }
 
     User user = userService.createUser(command)
