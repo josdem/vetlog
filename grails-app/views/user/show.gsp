@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta name="layout" content="main" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/style.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/demo.css" />
     <g:set var="entityName" value="${message(code: 'user.label', default: 'User')}" />
     <title><g:message code="default.show.label" args="[entityName]" /></title>
   </head>
@@ -30,7 +33,6 @@
           <f:display bean="user" property="profile.name" wrapper="show" />
           <f:display bean="user" property="profile.email" wrapper="show" />
         </ol>
-        </g:link>
       </div>
     </div>
   </body>
