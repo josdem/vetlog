@@ -1318,11 +1318,11 @@
     <!-- /#wrapper -->
 
     <!-- GLOBAL SCRIPTS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="js/plugins/popupoverlay/jquery.popupoverlay.js"></script>
-    <script src="js/plugins/popupoverlay/defaults.js"></script>
+    <asset:javascript src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+    <asset:javascript src="third-party/bootstrap/dist/js/bootstrap.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/slimscroll/jquery.slimscroll.min.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/jquery.popupoverlay.js" />
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/defaults.js" />
     <!-- Logout Notification Box -->
     <div id="logout">
         <div class="logout-message">
@@ -1345,14 +1345,11 @@
     </div>
     <!-- /#logout -->
     <!-- Logout Notification jQuery -->
-    <script src="js/plugins/popupoverlay/logout.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/logout.js" />
     <!-- HISRC Retina Images -->
-    <script src="js/plugins/hisrc/hisrc.js"></script>
-
-    <!-- PAGE LEVEL PLUGIN SCRIPTS -->
-
+    <asset:javascript src="third-party/vetlog-theme/js/plugins/hisrc/hisrc.js" />
     <!-- THEME SCRIPTS -->
-    <script src="js/flex.js"></script>
+    <asset:javascript src="third-party/vetlog-theme/js/flex.js" />
 
 </body>
 
