@@ -84,7 +84,7 @@ $( document ).ready(function() {
                 <small>Content Areas</small>
                 </h1>
                 <ol class="breadcrumb">
-                  <li><i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                  <li><i class="fa fa-dashboard"></i>  <a href="/">Dashboard</a>
                   </li>
                   <li class="active"><g:message code="user.view.show.title" /></li>
                 </ol>
@@ -94,7 +94,6 @@ $( document ).ready(function() {
           </div>
           <!-- /.row -->
           <!-- end PAGE TITLE ROW -->
-
 
           <div class="row">
             <div class="col-md-6">
