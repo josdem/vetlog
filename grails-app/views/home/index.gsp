@@ -6,11 +6,12 @@
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <a class="navbar-brand" href="/">Vetlog</a>
+      <a class="navbar-brand" href="/">
+        <asset:image src="third-party/vetlog-theme/img/flex-admin-logo.png" class="hisrc img-responsive" alt="" />
+      </a>
     </nav>
     <nav class="navbar-top" role="navigation">
       <div class="navbar-brand">
-        <asset:image src="third-party/vetlog-theme/img/flex-admin-logo.png" class="hisrc img-responsive" alt="" />
       </div>
     </nav>
     <div class="jumbotron">
