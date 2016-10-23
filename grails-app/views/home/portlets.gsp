@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -11,23 +9,22 @@
     <title>Flex Admin - Responsive Admin Theme</title>
 
     <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
-    <link href="css/plugins/pace/pace.css" rel="stylesheet">
-    <script src="js/plugins/pace/pace.js"></script>
+    <asset:javascript src="application.js" />
+    <asset:stylesheet src="application.css" />
 
     <!-- GLOBAL STYLES - Include these on every page. -->
-    <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <asset:stylesheet src="third-party/bootstrap/dist/css/bootstrap.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel="stylesheet" type="text/css">
-    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <asset:stylesheet src="third-party/font-awesome/css/font-awesome.min.css"/>
+
 
     <!-- PAGE LEVEL PLUGIN STYLES -->
 
     <!-- THEME STYLES - Include these on every page. -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/plugins.css" rel="stylesheet">
-
-    <!-- THEME DEMO STYLES - Use these styles for reference if needed. Otherwise they can be deleted. -->
-    <link href="css/demo.css" rel="stylesheet">
+    <asset:stylesheet src="third-party/vetlog-theme/css/style.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/plugins.css" />
+    <asset:stylesheet src="third-party/vetlog-theme/css/demo.css" />
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -173,7 +170,7 @@
                     <!-- begin ALERTS DROPDOWN -->
                     <li class="dropdown">
                         <a href="#" class="alerts-link dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-bell"></i> 
+                            <i class="fa fa-bell"></i>
                             <span class="number">9</span><i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-scroll dropdown-alerts">
@@ -304,7 +301,7 @@
                     <!-- begin TASKS DROPDOWN -->
                     <li class="dropdown">
                         <a href="#" class="tasks-link dropdown-toggle" data-toggle=dropdown>
-                            <i class="fa fa-tasks"></i> 
+                            <i class="fa fa-tasks"></i>
                             <span class=number>10</span><i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-scroll dropdown-tasks">
