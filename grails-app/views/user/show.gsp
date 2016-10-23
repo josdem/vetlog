@@ -77,7 +77,7 @@
                       <a href="#">
                         <div class="row">
                           <div class="col-xs-2">
-                            <img class="img-circle" src="img/user-profile-1.jpg" alt="">
+                            <asset:image src="third-party/vetlog-theme/img/user-profile-1.jpg" alt="" />
                           </div>
                           <div class="col-xs-10">
                             <p>
@@ -94,7 +94,7 @@
                       <a href="#">
                         <div class="row">
                           <div class="col-xs-2">
-                            <img class="img-circle" src="img/user-profile-2.jpg" alt="">
+                            <asset:image class="img-circle" src="third-party/vetlog-theme/img/user-profile-2.jpg" alt="" />
                           </div>
                           <div class="col-xs-10">
                             <p>
@@ -111,7 +111,7 @@
                       <a href="#">
                         <div class="row">
                           <div class="col-xs-2">
-                            <img class="img-circle" src="img/user-profile-3.jpg" alt="">
+                            <asset:image class="img-circle" src="third-party/vetlog-theme/img/user-profile-3.jpg" alt="" />
                           </div>
                           <div class="col-xs-10">
                             <p>
@@ -128,7 +128,7 @@
                       <a href="#">
                         <div class="row">
                           <div class="col-xs-2">
-                            <img class="img-circle" src="img/user-profile-4.jpg" alt="">
+                            <asset:image class="img-circle" src="third-party/vetlog-theme/img/user-profile-4.jpg" alt="" />
                           </div>
                           <div class="col-xs-10">
                             <p>
@@ -514,7 +514,7 @@
           <ul id="side" class="nav navbar-nav side-nav">
             <!-- begin SIDE NAV USER PANEL -->
             <li class="side-user hidden-xs">
-              <img class="img-circle" src="img/profile-pic.jpg" alt="">
+              <asset:image class="img-circle" src="third-party/vetlog-theme/img/profile-pic.jpg" alt="" />
               <p class="welcome">
               <i class="fa fa-key"></i> Logged in as
               </p>
@@ -766,47 +766,69 @@
         <div class="page-content">
 
           <!-- begin PAGE TITLE ROW -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="page-title">
-                          <h1><g:message code="user.view.show.label" args="[entityName]" /></h1>
-                                <small>Content Areas</small>
-                            </h1>
-                            <ol class="breadcrumb">
-                                <li><i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                                </li>
-                                <li class="active"><g:message code="user.view.show.title" /></li>
-                            </ol>
-                        </div>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
-                <!-- end PAGE TITLE ROW -->
-
-          <div class="portlet portlet-green">
-            <div class="portlet-heading">
-              <div class="portlet-title">
-                Hello!
-                <br /><br />
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="page-title">
+                <h1><g:message code="user.view.show.label" args="[entityName]" /></h1>
+                <small>Content Areas</small>
+                </h1>
+                <ol class="breadcrumb">
+                  <li><i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                  </li>
+                  <li class="active"><g:message code="user.view.show.title" /></li>
+                </ol>
               </div>
-              <div class="clearfix"></div>
             </div>
+            <!-- /.col-lg-12 -->
           </div>
-          <div class="portlet-body">
-            <div id="show-user" class="content scaffold-show" role="main">
-              <g:if test="${flash.message}">
-              <div class="message" role="status">${flash.message}</div>
-              </g:if>
-              <ol class="property-list user">
-                <f:display bean="user" property="username" wrapper="show" />
-                <f:display bean="user" property="profile.name" wrapper="show" />
-                <f:display bean="user" property="profile.email" wrapper="show" />
-              </ol>
+          <!-- /.row -->
+          <!-- end PAGE TITLE ROW -->
+
+
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="portlet portlet-green">
+                <div class="portlet-heading">
+                  <div class="portlet-title">
+                    <h4>User</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div id="defaultPortlet" class="panel-collapse collapse in">
+                <div class="portlet-body">
+                  <div id="show-user" class="content scaffold-show" role="main">
+                    <g:if test="${flash.message}">
+                    <div class="message" role="status">${flash.message}</div>
+                    </g:if>
+                    <ol class="property-list user">
+                      <f:display bean="user" property="username" wrapper="show" />
+                      <f:display bean="user" property="profile.name" wrapper="show" />
+                      <f:display bean="user" property="profile.email" wrapper="show" />
+                    </ol>
+                  </div>
+                </div>
+                <div class="portlet-footer">
+                  Portlet Footer
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
       </div>
+      <!-- GLOBAL SCRIPTS -->
+      <asset:javascript src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" />
+      <asset:javascript src="third-party/bootstrap/dist/js/bootstrap.min.js" />
+      <asset:javascript src="third-party/vetlog-theme/js/plugins/slimscroll/jquery.slimscroll.min.js" />
+      <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/jquery.popupoverlay.js" />
+      <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/defaults.js" />
+      <!-- Logout Notification jQuery -->
+      <asset:javascript src="third-party/vetlog-theme/js/plugins/popupoverlay/logout.js" />
+      <!-- HISRC Retina Images -->
+      <asset:javascript src="third-party/vetlog-theme/js/plugins/hisrc/hisrc.js" />
+      <!-- THEME SCRIPTS -->
+      <asset:javascript src="third-party/vetlog-theme/js/flex.js" />
   </body>
 </html>
