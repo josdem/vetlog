@@ -101,7 +101,7 @@ $( document ).ready(function() {
               <div class="portlet portlet-green">
                 <div class="portlet-heading">
                   <div class="portlet-title">
-                    <h4>User</h4>
+                    <h4><g:message code="user.portlet.title"/></h4>
                   </div>
                   <div class="clearfix"></div>
                 </div>
@@ -120,7 +120,7 @@ $( document ).ready(function() {
                   </div>
                 </div>
                 <div class="portlet-footer">
-                  Portlet Footer
+                  <g:message code="user.portlet.footer" />
                 </div>
               </div>
             </div>
