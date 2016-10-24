@@ -5,7 +5,8 @@ import grails.transaction.Transactional
 @Transactional
 class RecoveryService {
 
-    def serviceMethod() {
+  def sendConfirmationAccountToken(String email) {
+    def message = recoveryCollaboratorService.generateToken("${grailsApplication.config.recovery.register}", email)
+  }
 
-    }
 }
