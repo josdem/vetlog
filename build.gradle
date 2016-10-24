@@ -54,6 +54,7 @@ dependencies {
     compile "org.hibernate:hibernate-ehcache"
     console "org.grails:grails-console"
     compile 'org.grails.plugins:spring-security-core:3.1.1'
+    compile "mysql:mysql-connector-java:5.1.34"
     profile "org.grails.profiles:web"
     runtime "com.bertramlabs.plugins:asset-pipeline-grails:2.8.2"
     runtime "com.h2database:h2"
