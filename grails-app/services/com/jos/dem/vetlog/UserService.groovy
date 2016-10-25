@@ -5,6 +5,8 @@ import grails.transaction.Transactional
 @Transactional
 class UserService {
 
+  def recoveryService
+
   User createUser(UserCommand command){
     User user = new User(username: command.username, password:command.password)
     user.profile = command.getProfile()
@@ -16,6 +18,7 @@ class UserService {
   void save(User user, Role role){
     user.save()
     new UserRole(user:user, role:role).save()
+    recoveryService.sendConfirmationAccountToken(user.profile.email)
   }
 
 }
