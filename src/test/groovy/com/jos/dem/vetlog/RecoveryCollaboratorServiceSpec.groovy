@@ -1,22 +1,21 @@
 package com.jos.dem.vetlog
 
-import grails.test.mixin.TestFor
 import spock.lang.Specification
+import grails.test.mixin.Mock
 
-/**
- * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
- */
-@TestFor(RecoveryCollaboratorService)
+@Mock([RegistrationCode])
 class RecoveryCollaboratorServiceSpec extends Specification {
 
-    def setup() {
-    }
+  def service = new RecoveryCollaboratorService()
 
-    def cleanup() {
-    }
-
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
+  void "should generate token"() {
+    given:"An email and base url"
+      String email = 'josdem@email.com'
+      String baseUrl = 'baseUrl'
+    when:"We generate token"
+      def result = service.generateToken(baseUrl, email)
+    then:"We validate token command"
+      result.email == email
+      result.token
+  }
 }
