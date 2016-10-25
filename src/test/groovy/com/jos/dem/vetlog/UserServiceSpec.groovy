@@ -1,12 +1,18 @@
 package com.jos.dem.vetlog
 
-import grails.test.mixin.TestFor
 import grails.test.mixin.Mock
 import spock.lang.Specification
 
-@TestFor(UserService)
 @Mock([Role,UserRole,User])
 class UserServiceSpec extends Specification {
+
+  def service = new UserService()
+
+  def recoveryService = Mock(RecoveryService)
+
+  def setup(){
+    service.recoveryService = recoveryService
+  }
 
   void "should create an user"() {
     given:"A command"
@@ -24,5 +30,6 @@ class UserServiceSpec extends Specification {
       User result = service.createUser(command)
     then:"We expect user saved"
     result instanceof User
+    1 * recoveryService.sendConfirmationAccountToken('josdem@email.com')
   }
 }
