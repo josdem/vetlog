@@ -1,5 +1,6 @@
 package com.jos.dem.vetlog
 
+import groovyx.net.http.RESTClient
 import grails.transaction.Transactional
 
 class RestService {
@@ -10,8 +11,8 @@ class RestService {
     try{
       log.info "CALLING Email service: ${template}"
       log.info message.dump()
-      restClientBean.uri = grailsApplication.config.emailer.url
-      restClientBean.post(
+      def restClient = new RESTClient(grailsApplication.config.emailer.url)
+      restClient.post(
         path: template,
         body: message,
         requestContentType: 'application/json' )
