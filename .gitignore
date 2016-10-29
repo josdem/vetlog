@@ -12,3 +12,4 @@ classes/
 .classpath
 **swp
 grails-app/assets/javascripts/third-party/
+logs/
