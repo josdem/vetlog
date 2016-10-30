@@ -1,7 +1,9 @@
 package com.jos.dem.vetlog
 
-import groovyx.net.http.RESTClient
 import grails.transaction.Transactional
+import groovyx.net.http.RESTClient
+import groovyx.net.http.HttpResponseException
+
 
 class RestService {
 
@@ -16,7 +18,7 @@ class RestService {
         path: template,
         body: message,
         requestContentType: 'application/json' )
-    } catch(BusinessException ex) {
+    } catch(HttpResponseException ex) {
       log.warn "Error: ${ex.message}"
       throw new RestException(ex.message)
     }
