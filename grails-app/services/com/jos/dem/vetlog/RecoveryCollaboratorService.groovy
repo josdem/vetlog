@@ -7,7 +7,7 @@ class RecoveryCollaboratorService {
   MessageCommand generateToken(String baseUrl, String email){
     RegistrationCode registration = new RegistrationCode(email:email)
     registration.save()
-    new TokenCommand(email:email, token:"${baseUrl}${registration.token}")
+    new TokenCommand(email:email, message:"${baseUrl}${registration.token}", type:MessageType.REGISTER)
   }
 
 }
