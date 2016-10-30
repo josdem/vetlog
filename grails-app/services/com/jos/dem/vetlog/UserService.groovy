@@ -1,7 +1,5 @@
 package com.jos.dem.vetlog
 
-import grails.transaction.Transactional
-
 class UserService {
 
   def recoveryService
