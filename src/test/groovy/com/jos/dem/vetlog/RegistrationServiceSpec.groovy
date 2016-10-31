@@ -3,20 +3,23 @@ package com.jos.dem.vetlog
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
-/**
- * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
- */
-@TestFor(RegistrationService)
 class RegistrationServiceSpec extends Specification {
 
-    def setup() {
-    }
+  def service = new RegistrationService()
 
-    def cleanup() {
-    }
+  void "should find email by token"(){
+  given:"A token"
+    def token = 'token'
+  and:"An Email"
+    def email = 'josdem@email.com'
+  and:"A registration code"
+    def registrationCode = Mock(RegistrationCode)
+    registrationCode.email >> email
+    RegistrationCode.metaClass.static.findByToken = { registrationCode  }
+  when:"We find registration code with that token"
+    def result = service.findEmailByToken(token)
+  then:"We expect email"
+  'josdem@email.com' == result
+  }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
 }
