@@ -14,7 +14,7 @@ class RecoveryService {
     restService.sendCommand(message, grailsApplication.config.emailer.register)
   }
 
-  def confirmAccountForToken(token){
+  User confirmAccountForToken(token){
     def user = getUserByToken(token)
     if(!user){
       throw new UserNotFoundException(messageSource.getMessage('exception.user.not_found', null, LCH.getLocale()))
@@ -27,7 +27,7 @@ class RecoveryService {
     user.save()
 
     String name = "${user.profile.name} ${user.profile.lastName} ${user.profile.motherLastName}"
-    def message = new NameCommand(name:name, type:EmailerMessageType.NEW_USER)
+    MessageCommand message = new TokenCommand(name:name, type:MessageType.NEW_USER)
     restService.sendCommand(message, grailsApplication.config.emailer.newUser)
     user
   }
