@@ -22,4 +22,19 @@ class RegistrationServiceSpec extends Specification {
   'josdem@email.com' == result
   }
 
+  void "should not find token"(){
+  given:"A token"
+    def token = 'token'
+  and:"An Email"
+    def email = 'josdem@email.com'
+  and:"A registration code"
+    def registrationCode = Mock(RegistrationCode)
+    registrationCode.email >> email
+    RegistrationCode.metaClass.static.findByToken = { null  }
+  when:"We find registration code with that token"
+    def result = service.findEmailByToken(token)
+  then:"We expect exception"
+    thrown BusinessException
+  }
+
 }
